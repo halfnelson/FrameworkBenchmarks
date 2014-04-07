@@ -8,6 +8,7 @@ using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Web.Script.Serialization;
+using Jil;
 
 using MongoDB.Driver.Builders;
 
@@ -193,7 +194,7 @@ namespace HttpListener
         private static string Json(HttpListenerResponse response)
         {
             response.ContentType = "application/json";
-            return new JavaScriptSerializer().Serialize(new { message = "Hello, World!" });
+            return JSON.Serialize(new {message = "Hello, World!"});
         }
 
         private static string Db(HttpListenerRequest request, HttpListenerResponse response)
