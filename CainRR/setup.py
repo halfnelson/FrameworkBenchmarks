@@ -8,7 +8,7 @@ def start(args, logfile, errfile):
     return 1
   
   try:
-    setup_util.replace_text("CainRR/HttpListener/App.config", "localhost", args.database_host)
+    setup_util.replace_text("CainRR/OwinWebApi/App.config", "localhost", args.database_host)
     subprocess.check_call("powershell -Command .\\setup.ps1 start", cwd="CainRR", stderr=errfile, stdout=logfile)
     return 0
   except subprocess.CalledProcessError:
