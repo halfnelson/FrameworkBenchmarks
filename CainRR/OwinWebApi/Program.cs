@@ -11,10 +11,11 @@ namespace OwinWebApi
     {
         static void Main(string[] args)
         {
-            string baseAddress = "http://localhost:9000/"; 
+            string hostAddress = "http://*:9000/";
+            string baseAddress = "http://localhost:9000/";
 
             // Start OWIN host 
-            using (WebApp.Start<Startup>(url: baseAddress)) 
+            using (WebApp.Start<Startup>(url: hostAddress)) 
             { 
                 // Create HttpCient and make a request to api/values 
                 HttpClient client = new HttpClient(); 
