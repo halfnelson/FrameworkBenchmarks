@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinWebApi", "OwinWebApi.csproj", "{F8A81B1E-0215-4F48-B230-3114E5B81AE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinWebApi", "OwinWebApi\OwinWebApi.csproj", "{F8A81B1E-0215-4F48-B230-3114E5B81AE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
