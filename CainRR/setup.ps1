@@ -26,7 +26,7 @@ Get-Process | Where-Object { $_.Name -ieq "OwinWebApi" } | Stop-Process
 
 if ($action -eq 'start') {
     # Build the project
-    Exec { & $msbuild "$root\OwinWebApi\OwinWebApi.sln" /p:DownloadNuGetExe=true /p:RequireRestoreConsent=false /p:Configuration=Release /t:Rebuild }
+    Exec { & $msbuild "$root\OwinWebApi.sln" /p:DownloadNuGetExe=true /p:RequireRestoreConsent=false /p:Configuration=Release /t:Rebuild }
     
     Start-Process "$root\OwinWebApi\bin\Release\OwinWebApi.exe"
 }
